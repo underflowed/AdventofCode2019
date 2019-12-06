@@ -13,18 +13,18 @@ public class Solution {
         int integerinput;
         int sum = 0;
         int sum2 = 0;
-        double holder;     
+        int holder;     
         while(input != null) {
             try {
                 // Part 1
                 input = bufferedreader.readLine();
                 integerinput = Integer.parseInt(input);  
-                sum += Math.floor(integerinput/3) - 2;
+                sum += integerinput/3 - 2;
                 System.out.println(sum);
                 // Part 2
                 holder = integerinput;
                 while(holder > 0) {
-                    holder = Math.floor(holder/3) - 2;
+                    holder = holder/3 - 2;
                     if(holder >= 0) {
                         sum2 += holder;
                         System.out.println(sum2);                    
